@@ -1,12 +1,8 @@
-const name = ["aaaa", "1234567890"];
-
-function Post() {
-  const choseName = Math.random() > 0.5 ? name[0] : name[1];
-
+function Post(props) {
   return (
     <div>
-      <p>{choseName}</p>
-      <p>un happy</p>
+      <p>{props.name}</p>
+      <p>{props.body}</p>
     </div>
   );
 }
