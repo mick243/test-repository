@@ -2,7 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import Post from "./components/post";
+import Post from "./components/Post";
+import PostList from "./components/PostList";
 
 // function App() {
 //   // const [count, setCount] = useState(0)
@@ -34,11 +35,21 @@ import Post from "./components/post";
 //   // )
 // }
 
+// function App() {
+//   return (
+//     <main>
+//       <Post name="abc" body="aaaa" />
+//       <Post name="def" body="bbbb" />
+//     </main>
+//   );
+// }
+
+// export default App;
+
 function App() {
   return (
     <main>
-      <Post name="abc" body="aaaa" />
-      <Post name="def" body="bbbb" />
+      <PostList />
     </main>
   );
 }
