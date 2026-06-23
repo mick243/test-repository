@@ -9,13 +9,13 @@
 
 // export default Post;
 
-import styles from "./Post.module.css";
+import classes from "./Post.module.css";
 
-function Post(props) {
+function Post({ author, body }) {
   return (
-    <div className={styles.posts}>
-      <p className={styles.author}>{props.name}</p>
-      <p className={styles.text}>{props.body}</p>
+    <div className={classes.posts}>
+      <p className={classes.author}>{author}</p>
+      <p className={classes.text}>{body}</p>
     </div>
   );
 }
